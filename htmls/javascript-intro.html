@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to JavaScript</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> 
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                    <div class="dropdown-content">
+                        <a href="html-examples.html">HTML Basic Examples</a>
+                        <a href="html-attributes.html">HTML Attributes</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                    <div class="dropdown-content">
+                        <a href="css-connecting.html">Connecting CSS with HTML</a>
+                        <a href="css-colors.html">CSS Colors</a>
+                        <a href="css-padding.html">CSS Padding</a>
+                        <a href="css-margin.html">CSS Margin</a>
+                        <a href="css-background-color.html">CSS Background Color</a>
+                        <a href="css-border.html">CSS Border</a>
+                        <a href="css-flexbox.html">CSS Flexbox</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">JavaScript</a>
+                    <div class="dropdown-content">
+                        <a href="javascript-intro.html">Introduction to JavaScript</a>
+                        <a href="javascript-connecting.html">Connecting JavaScript to HTML</a>
+                        <a href="javascript-dom.html">Connecting JavaScript to HTML</a>
+                        <!-- Add more JavaScript pages here as needed -->
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Introduction to JavaScript</h2>
+            <p>JavaScript is a scripting language used to create and control dynamic website content, interact with users, and much more.</p>
+        </section>
+
+        <section id="console-log">
+            <h3>console.log()</h3>
+            <p>The <code>console.log()</code> method is used to log or print messages to the console, typically for debugging purposes.</p>
+            <pre><code>/* Example of console.log() */
+console.log('Hello, world!');</code></pre>
+<div id="output">
+</div>
+<button onclick="printMessage()">Print Message</button>
+        </section>
+
+        <section id="variables">
+            <h3>Variables: let, var, and const</h3>
+            <p>Variables in JavaScript are containers that store data values. There are three ways to declare variables: <code>let</code>, <code>var</code>, and <code>const</code>.</p>
+        </section>
+        <section id="let_section">
+            <h4>let</h4>
+            <p><code>let</code> allows you to declare variables that are limited to the scope of a block statement or expression in which it is used. It is a good practice to use <code>let</code> over <code>var</code> for variable declaration in modern JavaScript.</p>
+            <pre><code>/* Example of let */
+let message = 'Hello, world!';
+console.log(message);</code></pre>
+<div id="let">
+    <!-- Output will be displayed here -->
+</div>
+<button onclick="let_variable()">Print Message</button>
+        </section>
+        <section id="var_section">    
+            <h4>var</h4>
+            <p><code>var</code> is the older way to declare variables in JavaScript. It is globally scoped or function scoped which can lead to unintended behavior when used inside blocks.</p>
+            <pre><code>/* Example of var */
+var count = 10;
+console.log(count);</code></pre>
+<div id="var">
+    <!-- Output will be displayed here -->
+</div>
+<button onclick="var_variable()">Print Message</button>
+        </section>
+        <section id="const_section">
+            <h4>const</h4>
+            <p><code>const</code> is used to declare variables that cannot be reassigned. The value of a constant cannot change through reassignment, and it must be initialized during declaration.</p>
+            <pre><code>/* Example of const */
+const pi = 3.14;
+console.log(pi);</code></pre>
+<div id="const">
+    <!-- Output will be displayed here -->
+</div>
+<button onclick="const_variable()">Print Message</button>
+        </section>
+
+        <section id="functions">
+            <h3>Functions</h3>
+            <p>Functions are reusable blocks of code that perform a specific task. They can be defined using the <code>function</code> keyword.</p>
+            
+            <h4>Defining a Function</h4>
+            <p>To define a function, use the <code>function</code> keyword followed by the function name and parentheses <code>()</code> containing optional parameters.</p>
+            <pre><code>/* Example of defining a function */
+function greet(name) {
+    return 'Hello, ' + name + '!';
+}</code></pre>
+            
+            <h4>Calling a Function</h4>
+            <p>To execute or call a function, use the function name followed by parentheses <code>()</code>.</p>
+            <pre><code>/* Example of calling a function */
+console.log(greet('Alice')); // Outputs: Hello, Alice!</code></pre>
+<div id="const">
+    <!-- Output will be displayed here -->
+</div>
+<button onclick="greet(Alice)">Print Message</button>
+        </section>
+        <footer>
+            <p>&copy; 2024 Web Development Tutorials. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="../script.js"></script> 
+</body>
+</html>

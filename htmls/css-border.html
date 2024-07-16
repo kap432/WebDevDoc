@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Border</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> 
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                    <div class="dropdown-content">
+                        <a href="html-examples.html">HTML Basic Examples</a>
+                        <a href="html-attributes.html">HTML Attributes</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                    <div class="dropdown-content">
+                        <a href="css-connecting.html">Connecting CSS with HTML</a>
+                        <a href="css-colors.html">CSS Colors</a>
+                        <a href="css-padding.html">CSS Padding</a>
+                        <a href="css-margin.html">CSS Margin</a>
+                        <a href="css-background-color.html">CSS Background Color</a>
+                        <a href="css-border.html">CSS Border</a>
+                        <a href="css-flexbox.html">CSS Flexbox</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">JavaScript</a>
+                    <div class="dropdown-content">
+                        <a href="javascript-intro.html">Introduction to JavaScript</a>
+                        <a href="javascript-dom.html">DOM Manipulation and Button Event Listeners</a>
+                        <a href="javascript-connecting.html">Connecting JavaScript to HTML</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro-border">
+            <h2>Introduction to CSS Border</h2>
+            <p>The border property is used to set the border around an element. You can specify the width, style, and color of the border.</p>
+        </section>
+
+        <section id="border-example">
+            <h2>Border Example</h2>
+            <p>Here is an example of setting a border in CSS:</p>
+            <pre><code>/* Border example */
+p {
+    border: 2px solid black;
+}</code></pre>
+            <div class="border-example">
+                <p style="border: 2px solid black;">This paragraph has a 2px solid black border.</p>
+            </div>
+        </section>
+
+        <section id="border-style">
+            <h2>Different Border Styles</h2>
+            <p>You can use different border styles like dashed, dotted, double, etc.:</p>
+            <pre><code>/* Different border styles */
+p {
+    border: 2px dashed blue;
+}</code></pre>
+            <div class="border-example">
+                <p style="border: 2px dashed blue;">This paragraph has a 2px dashed blue border.</p>
+            </div>
+        </section>
+
+        <section id="individual-border">
+            <h2>Individual Border Properties</h2>
+            <p>You can set borders individually for each side:</p>
+            <pre><code>/* Individual border properties */
+p {
+    border-top: 2px solid red;
+    border-right: 4px dotted green;
+    border-bottom: 6px double blue;
+    border-left: 8px groove purple;
+}</code></pre>
+            <div class="border-example">
+                <p style="border-top: 2px solid red; border-right: 4px dotted green; border-bottom: 6px double blue; border-left: 8px groove purple;">
+                    This paragraph has different borders on each side (top: 2px solid red, right: 4px dotted green, bottom: 6px double blue, left: 8px groove purple).
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Web Development Tutorials. All rights reserved.</p>
+    </footer>
+</body>
+</html>

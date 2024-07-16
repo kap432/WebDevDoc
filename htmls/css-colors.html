@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Colors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> 
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                    <div class="dropdown-content">
+                        <a href="html-examples.html">HTML Basic Examples</a>
+                        <a href="html-attributes.html">HTML Attributes</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                    <div class="dropdown-content">
+                        <a href="css-connecting.html">Connecting CSS with HTML</a>
+                        <a href="css-colors.html">CSS Colors</a>
+                        <a href="css-padding.html">CSS Padding</a>
+                        <a href="css-margin.html">CSS Margin</a>
+                        <a href="css-background-color.html">CSS Background Color</a>
+                        <a href="css-border.html">CSS Border</a>
+                        <a href="css-flexbox.html">CSS Flexbox</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">JavaScript</a>
+                    <div class="dropdown-content">
+                        <a href="javascript-intro.html">Introduction to JavaScript</a>
+                        <a href="javascript-dom.html">DOM Manipulation and Button Event Listeners</a>
+                        <a href="javascript-connecting.html">Connecting JavaScript to HTML</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro-colors">
+            <h2>Introduction to CSS Colors</h2>
+            <p>CSS colors can be defined using various formats, including HEX and RGB values. These formats are used to set the color of elements in a webpage.</p>
+        </section>
+
+        <section id="hex-colors">
+            <h2>HEX Colors</h2>
+            <p>HEX color values are specified with a hash (#) followed by six hex digits, representing the intensity of red, green, and blue. Example:</p>
+            <pre><code>/* HEX color example */
+p {
+    color: #ff0000; /* Red */
+    background-color: #00ff00; /* Green */
+}</code></pre>
+            <div class="color-example">
+                <p style="color: #ff0000; background-color: #00ff00;">This text is red with a green background using HEX colors.</p>
+            </div>
+        </section>
+
+        <section id="rgb-colors">
+            <h2>RGB Colors</h2>
+            <p>RGB color values are specified with the <code>rgb()</code> function, which defines the intensity of red, green, and blue. Example:</p>
+            <pre><code>/* RGB color example */
+p {
+    color: rgb(255, 0, 0); /* Red */
+    background-color: rgb(0, 255, 0); /* Green */
+}</code></pre>
+            <div class="color-example">
+                <p style="color: rgb(255, 0, 0); background-color: rgb(0, 255, 0);">This text is red with a green background using RGB colors.</p>
+            </div>
+        </section>
+    </main>
+    <div class="spacing1"></div>
+    <footer class="footer">
+        <p>&copy; 2024 Web Development Tutorials. All rights reserved.</p>
+    </footer>
+</body>
+</html>

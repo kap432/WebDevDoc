@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecting JavaScript to HTML Pages</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> 
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                    <div class="dropdown-content">
+                        <a href="html-examples.html">HTML Basic Examples</a>
+                        <a href="html-attributes.html">HTML Attributes</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                    <div class="dropdown-content">
+                        <a href="css-connecting.html">Connecting CSS with HTML</a>
+                        <a href="css-colors.html">CSS Colors</a>
+                        <a href="css-padding.html">CSS Padding</a>
+                        <a href="css-margin.html">CSS Margin</a>
+                        <a href="css-background-color.html">CSS Background Color</a>
+                        <a href="css-border.html">CSS Border</a>
+                        <a href="css-flexbox.html">CSS Flexbox</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">JavaScript</a>
+                    <div class="dropdown-content">
+                        <a href="javascript-intro.html">Introduction to JavaScript</a>
+                        <a href="javascript-connecting.html">Connecting JavaScript to HTML</a>
+                        <a href="javascript-dom.html">Connecting JavaScript to HTML</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Connecting JavaScript to HTML Pages</h2>
+            <p>JavaScript can be connected to HTML pages using different techniques to enhance interactivity and functionality.</p>
+        </section>
+
+        <section id="inline-script">
+            <h3>Inline Scripting</h3>
+            <p>Inline scripting involves embedding JavaScript directly within HTML using the <code>&lt;script&gt;</code> tag's <code>onclick</code>, <code>onload</code>, or other event attributes.</p>
+            <pre><code>&lt;button onclick="alert('Button clicked!')"&gt;Click Me&lt;/button&gt;</code></pre>
+        </section>
+
+        <section id="internal-script">
+            <h3>Internal Scripting</h3>
+            <p>Internal scripting places JavaScript code within the <code>&lt;script&gt;</code> tags directly in the HTML document's <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code> section.</p>
+            <pre><code>&lt;script&gt;
+    function greet() {
+        alert('Hello, world!');
+    }
+&lt;/script&gt;</code></pre>
+        </section>
+
+        <section id="external-script">
+            <h3>External Scripting</h3>
+            <p>External scripting links an external JavaScript file using the <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code> tag, enabling reuse and separation of concerns.</p>
+            <pre><code>&lt;script src="script.js"&gt;&lt;/script&gt;</code></pre>
+        </section>
+    </main>
+    <div class="spacing5"></div>
+    <footer>
+        <p>&copy; 2024 Web Development Tutorials. All rights reserved.</p>
+    </footer>
+</body>
+</html>

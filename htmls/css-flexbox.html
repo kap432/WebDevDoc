@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> 
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                    <div class="dropdown-content">
+                        <a href="html-examples.html">HTML Basic Examples</a>
+                        <a href="html-attributes.html">HTML Attributes</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                    <div class="dropdown-content">
+                        <a href="css-connecting.html">Connecting CSS with HTML</a>
+                        <a href="css-colors.html">CSS Colors</a>
+                        <a href="css-padding.html">CSS Padding</a>
+                        <a href="css-margin.html">CSS Margin</a>
+                        <a href="css-background-color.html">CSS Background Color</a>
+                        <a href="css-border.html">CSS Border</a>
+                        <a href="css-flexbox.html">CSS Flexbox</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">JavaScript</a>
+                    <div class="dropdown-content">
+                        <a href="javascript-intro.html">Introduction to JavaScript</a>
+                        <a href="javascript-dom.html">DOM Manipulation and Button Event Listeners</a>
+                        <a href="javascript-connecting.html">Connecting JavaScript to HTML</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="flexbox">
+            <h2>CSS Flexbox</h2>
+            <p>The CSS Flexbox Layout (Flexible Box) module provides a more efficient way to layout, align, and distribute space among items in a container, even when their size is unknown or dynamic (thus the word "flex").</p>
+        </section>
+
+        <section id="flex-container">
+            <h3>Flex Container</h3>
+            <p>To start using Flexbox, you need to define a flex container. This is done by setting the <code>display</code> property to <code>flex</code>.</p>
+            <pre><code>/* Flex container */
+.container {
+    display: flex;
+}</code></pre>
+            <div class="flex-container">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+
+        <section id="flex-direction">
+            <h3>Flex Direction</h3>
+            <p>The <code>flex-direction</code> property defines the direction in which the container wants to stack the flex items.</p>
+            <pre><code>/* Flex direction */
+.container {
+    display: flex;
+    flex-direction: row; /* row, row-reverse, column, column-reverse */
+}</code></pre>
+            <div class="flex-container-row">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+
+        <section id="justify-content">
+            <h3>Justify Content</h3>
+            <p>The <code>justify-content</code> property is used to align the flex items along the main axis (horizontally by default).</p>
+            <pre><code>/* Justify content */
+.container {
+    display: flex;
+    justify-content: center; /* flex-start, flex-end, center, space-between, space-around */
+}</code></pre>
+            <div class="flex-container-center">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+
+        <section id="align-items">
+            <h3>Align Items</h3>
+            <p>The <code>align-items</code> property is used to align the flex items along the cross axis (vertically by default).</p>
+            <pre><code>/* Align items */
+.container {
+    display: flex;
+    align-items: center; /* flex-start, flex-end, center, baseline, stretch */
+}</code></pre>
+            <div class="flex-container-align-center">
+                <div class="flex-item">Item 1</div>
+                <div class="flex-item">Item 2</div>
+                <div class="flex-item">Item 3</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Web Development Tutorials. All rights reserved.</p>
+    </footer>
+</body>
+</html>

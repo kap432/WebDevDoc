@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Background Color</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> 
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                    <div class="dropdown-content">
+                        <a href="html-examples.html">HTML Basic Examples</a>
+                        <a href="html-attributes.html">HTML Attributes</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                    <div class="dropdown-content">
+                        <a href="css-connecting.html">Connecting CSS with HTML</a>
+                        <a href="css-colors.html">CSS Colors</a>
+                        <a href="css-padding.html">CSS Padding</a>
+                        <a href="css-margin.html">CSS Margin</a>
+                        <a href="css-background-color.html">CSS Background Color</a>
+                        <a href="css-border.html">CSS Border</a>
+                        <a href="css-flexbox.html">CSS Flexbox</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">JavaScript</a>
+                    <div class="dropdown-content">
+                        <a href="javascript-intro.html">Introduction to JavaScript</a>
+                        <a href="javascript-dom.html">DOM Manipulation and Button Event Listeners</a>
+                        <a href="javascript-connecting.html">Connecting JavaScript to HTML</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="background-color">
+            <h2>CSS Background Color</h2>
+            <p>The <code>background-color</code> property in CSS is used to specify the background color of an element. You can use color names, HEX values, RGB values, or HSL values to set the background color.</p>
+        </section>
+
+        <section id="background-color-example">
+            <h3>Background Color Example</h3>
+            <p>Here is an example of setting a background color using a color name:</p>
+            <pre><code>/* Background color using a color name */
+p {
+    background-color: lightblue;
+}</code></pre>
+            <div class="background-color-example">
+                <p style="background-color: lightblue;">This paragraph has a light blue background color.</p>
+            </div>
+        </section>
+
+        <section id="hex-color">
+            <h3>HEX Color</h3>
+            <p>You can set the background color using HEX values:</p>
+            <pre><code>/* Background color with HEX */
+p {
+    background-color: #ff6347; /* Tomato */
+}</code></pre>
+            <div class="background-color-example">
+                <p style="background-color: #ff6347;">This paragraph has a tomato background color (HEX: #ff6347).</p>
+            </div>
+        </section>
+
+        <section id="rgb-color">
+            <h3>RGB Color</h3>
+            <p>You can also set the background color using RGB values:</p>
+            <pre><code>/* Background color with RGB */
+p {
+    background-color: rgb(255, 99, 71); /* Tomato */
+}</code></pre>
+            <div class="background-color-example">
+                <p style="background-color: rgb(255, 99, 71);">This paragraph has a tomato background color (RGB: 255, 99, 71).</p>
+            </div>
+        </section>
+    </main>
+    <div class="spacing4"></div>
+    <footer>
+        <p>&copy; 2024 Web Development Tutorials. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> 
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                    <div class="dropdown-content">
+                        <a href="html-examples.html">HTML Basic Examples</a>
+                        <a href="html-attributes.html">HTML Attributes</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                    <div class="dropdown-content">
+                        <a href="css-connecting.html">Connecting CSS with HTML</a>
+                        <a href="css-colors.html">CSS Colors</a>
+                        <a href="css-padding.html">CSS Padding</a>
+                        <a href="css-margin.html">CSS Margin</a>
+                        <a href="css-background-color.html">CSS Background Color</a>
+                        <a href="css-border.html">CSS Border</a>
+                        <a href="css-flexbox.html">CSS Flexbox</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">JavaScript</a>
+                    <div class="dropdown-content">
+                        <a href="javascript-intro.html">Introduction to JavaScript</a>
+                        <a href="javascript-dom.html">DOM Manipulation and Button Event Listeners</a>
+                        <a href="javascript-connecting.html">Connecting JavaScript to HTML</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intro-margin">
+            <h2>Introduction to CSS Margin</h2>
+            <p>Margin is the space outside the border of an element. It can be set for each side of the element (top, right, bottom, left).</p>
+        </section>
+
+        <section id="margin-example">
+            <h2>Margin Example</h2>
+            <p>Here is an example of setting margin in CSS:</p>
+            <pre><code>/* Margin example */
+p {
+    margin: 20px; /* Applies 20px margin on all sides */
+    border: 1px solid black;
+}</code></pre>
+            <div class="margin-example">
+                <p style="margin: 20px; border: 1px solid black;">This paragraph has 20px margin on all sides.</p>
+            </div>
+        </section>
+
+        <section id="margin-individual">
+            <h2>Individual Margin Properties</h2>
+            <p>Margin can be set individually for each side:</p>
+            <pre><code>/* Individual margin properties */
+p {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    border: 1px solid black;
+}</code></pre>
+            <div class="margin-example">
+                <p style="margin-top: 10px; margin-right: 20px; margin-bottom: 30px; margin-left: 40px; border: 1px solid black;">
+                    This paragraph has different margin on each side (top: 10px, right: 20px, bottom: 30px, left: 40px).
+                </p>
+            </div>
+        </section>
+    </main>
+    <div class="spacing3"></div>
+    <footer>
+        <p>&copy; 2024 Web Development Tutorials. All rights reserved.</p>
+    </footer>
+</body>
+</html>

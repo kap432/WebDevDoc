@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring the Document Object Model (DOM)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li> 
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">HTML</a>
+                    <div class="dropdown-content">
+                        <a href="html-examples.html">HTML Basic Examples</a>
+                        <a href="html-attributes.html">HTML Attributes</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">CSS</a>
+                    <div class="dropdown-content">
+                        <a href="css-connecting.html">Connecting CSS with HTML</a>
+                        <a href="css-colors.html">CSS Colors</a>
+                        <a href="css-padding.html">CSS Padding</a>
+                        <a href="css-margin.html">CSS Margin</a>
+                        <a href="css-background-color.html">CSS Background Color</a>
+                        <a href="css-border.html">CSS Border</a>
+                        <a href="css-flexbox.html">CSS Flexbox</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">JavaScript</a>
+                    <div class="dropdown-content">
+                        <a href="javascript-intro.html">Introduction to JavaScript</a>
+                        <a href="javascript-connecting.html">Connecting JavaScript to HTML</a>
+                        <a href="javascript-dom.html">Exploring the DOM</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="introduction">
+            <h2>Exploring the Document Object Model (DOM)</h2>
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of an HTML or XML document as a tree of objects that can be manipulated with JavaScript.</p>
+        </section>
+
+        <section id="dom-manipulation">
+            <h3>DOM Manipulation</h3>
+            <p>DOM manipulation refers to the process of accessing or modifying elements within an HTML document using JavaScript.</p>
+            <pre><code>// Example of accessing an element by ID
+var element = document.getElementById('myElementId');
+element.textContent = 'Updated text content';</code></pre>
+        </section>
+
+        <section id="dom-events">
+            <h3>DOM Events</h3>
+            <p>DOM events are actions or occurrences that happen in the DOM. They can trigger JavaScript functions or scripts to respond to user actions or other events.</p>
+            <pre><code>// Example of adding an event listener
+var button = document.getElementById('myButton');
+button.addEventListener('click', function() {
+    alert('Button clicked!');
+});</code></pre>
+        </section>
+
+        <section id="button-click-example">
+            <h3>Button Click Event</h3>
+            <p>Example of handling a button click event and displaying the click event on the HTML page:</p>
+            <pre><code> var button = document.getElementById('myButton');
+                var output = document.getElementById('clickOutput');
+
+                button.addEventListener('click', function() {
+                    output.textContent = 'Button clicked!';
+                });</code></pre>
+            <button id="myButton">Click Me</button>
+            <p id="clickOutput"></p>
+            <script>
+                var button = document.getElementById('myButton');
+                var output = document.getElementById('clickOutput');
+
+                button.addEventListener('click', function() {
+                    output.textContent = 'Button clicked!';
+                });
+            </script>
+        </section>
+    </main>
+    <div class="spacing6"></div>
+    <footer>
+        <p>&copy; 2024 Web Development Tutorials. All rights reserved.</p>
+    </footer>
+</body>
+</html>
